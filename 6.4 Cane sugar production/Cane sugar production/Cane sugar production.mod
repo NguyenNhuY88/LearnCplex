@@ -17,7 +17,7 @@
  subject to {
  	forall (w in WAGONS) sum(s in SLOTS) process[w][s] == 1;
  	forall (s in SLOTS) sum (w in WAGONS) process[w][s] <= NL; 
- //	forall (w in WAGONS) sum (s in SLOTS) s*process[w][s] <= LIFE[w]/DUR;
+ 	forall (w in WAGONS) sum (s in SLOTS) s*process[w][s] <= LIFE[w]/DUR;
  	 
  }
  execute {
