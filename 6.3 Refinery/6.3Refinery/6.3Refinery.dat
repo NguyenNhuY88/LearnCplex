@@ -1,0 +1,32 @@
+/*********************************************
+ * OPL 12.6.2.0 Data
+ * Author: Y
+ * Creation Date: Apr 7, 2018 at 8:43:47 AM
+ *********************************************/
+CRUDES = {crude1,crude2};
+FINAL={butane, petrol,diesel,heating};
+IDIST ={distbutane,naphtha,gasoil,residue};
+IREF={refbutane,reformate};
+ICRACK={crknaphtha,crkgasoil};
+IPETROL={petbutane,reformate,petcrknaphtha};
+IDIESEL={dslgasoil,dslcrknaphtha,dslcrkgasoil};
+
+DEM = #["butane": 20000, "petrol": 40000 ,"diesel": 30000 ,"heating": 42000]#;
+
+OCT= #["petbutane": 120, "reformate": 100 ,"petcrknaphtha": 74]#;
+VAP= #["petbutane":  60 ,"reformate": 2.6 ,"petcrknaphtha": 4.1]#;
+VOL= #["petbutane": 105 ,"reformate": 3  , "petcrknaphtha": 12]#;
+
+SULF= #["dslgasoil": 0.03 ,"dslcrknaphtha": 0.12 ,"dslcrkgasoil": 0.76]#;
+
+AVAIL= #["crude1": 250000 ,"crude2": 500000]#;
+
+REF= #["refbutane": 0.15 ,"reformate": 0.85]#;
+CRACK= #["crknaphtha": 0.40 ,"crkgasoil": 0.35]#;
+
+DIST = #[ "crude1":#["distbutane":0.03 ,"naphtha":0.15 ,"gasoil":0.40 , "residue":0.15]#,
+     	 "crude2":#["distbutane":0.05 ,"naphtha":0.20  ,"gasoil": 0.35 , "residue":0.10]#
+      ]#;
+
+COST = #["crude1": 2.1 ,"crude2": 2.1 , "distbutane": 0, "naphtha": 4.18, "gasoil": 2.04, "residue": 0.6 ]#;
+
